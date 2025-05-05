@@ -1,1 +1,165 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlantPal – Správa tvojich rastlín</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #1e1e1e;
+      background-color: #f9f9f9;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+    header img {
+      height: 80px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0 0.5rem;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .screenshot {
+      border: 1px solid #ccc;
+      border-radius: 1.5rem;
+      padding: 0.5rem;
+      background-color: white;
+      max-width: 200px;
+    }
+    .features {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .features h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      font-size: 1.2rem;
+      margin: 0.8rem 0;
+    }
+    .download {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .download a {
+      background-color: #34a853;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s;
+    }
+    .download a:hover {
+      background-color: #2c8f47;
+    }
+    .contact {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact input,
+    .contact textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.4rem;
+      width: 100%;
+    }
+    .contact button {
+      padding: 1rem;
+      background-color: #34a853;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #2c8f47;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="PlantPal logo" />
+    <h1>PlantPal</h1>
+    <p class="intro">Prehľadná správa rastlín pre každého domáceho pestovateľa.</p>
+  </header>
+
+  <section class="screenshots">
+    <img src="screenshot1.png" alt="Screenshot 1" class="screenshot" />
+    <img src="screenshot2.png" alt="Screenshot 2" class="screenshot" />
+    <img src="screenshot3.png" alt="Screenshot 3" class="screenshot" />
+  </section>
+
+  <section class="features">
+    <h2>✨ Čo PlantPal dokáže</h2>
+    <ul>
+      <li>🪴 Pridaj svoje rastliny</li>
+      <li>📷 Nahrávaj fotky</li>
+      <li>📋 Zaznamenaj informácie</li>
+      <li>⏰ Notifikácie na zalievanie</li>
+      <li>📅 Záznamy o udalostiach</li>
+      <li>☁️ Bezpečne uložené</li>
+    </ul>
+  </section>
+
+  <section class="download">
+    <a href="#">📥 Stiahnuť z App Store</a>
+  </section>
+
+  <section class="contact">
+    <h2>📬 Kontaktuj vývojára</h2>
+    <p>hello@plantpal.app</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Vaše meno" required />
+      <input type="email" name="email" placeholder="Váš e-mail" required />
+      <textarea name="message" placeholder="Vaša správa" rows="5" required></textarea>
+      <button type="submit">Odoslať</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 PlantPal. Všetky práva vyhradené.
+  </footer>
+</body>
+</html>
